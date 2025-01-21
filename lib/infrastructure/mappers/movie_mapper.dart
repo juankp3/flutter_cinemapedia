@@ -13,10 +13,9 @@ class MovieMapper {
       originalTitle: moviebd.originalTitle,
       overview: moviebd.overview,
       popularity: moviebd.popularity,
-      // posterPath: moviebd.posterPath,
       posterPath: moviebd.posterPath != ''
           ? 'https://image.tmdb.org/t/p/w500/${moviebd.posterPath}'
-          : 'https://ih1.redbubble.net/image.4905811447.8675/flat,750x,075,f-pad,750x1000,f8f8f8.jpg',
+          : 'no-poster',
       releaseDate: moviebd.releaseDate,
       title: moviebd.title,
       video: moviebd.video,
